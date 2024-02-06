@@ -54,4 +54,18 @@ a:hover {
 
 a:active {
     color: #990000;
-} 
+}
+/* CSS Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Border color for table cells */
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2; /* Background color for header cells */
+}
