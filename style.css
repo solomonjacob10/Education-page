@@ -62,11 +62,10 @@ table {
 }
 
 th, td {
-    border: 1px solid black; /* Solid black border for table cells */
+    border: 1px solid black;
     padding: 8px;
 }
 
-/* Remove the background color for header cells */
 th {
     background-color: transparent;
 }
