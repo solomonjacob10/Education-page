@@ -1,0 +1,57 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #f4f4f4; /* Light Gray */
+    color: #333; /* Dark gray */
+    margin: 15pt;
+}
+
+/* Headings */
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24pt;
+    color: #0066cc; /* Blue color for H1 */
+}
+
+h2 {
+    font-family: "Georgia", serif;
+    font-size: 20pt;
+    color: #009900; /* Green color for H2 */
+}
+
+h3 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16pt;
+    color: #ff6600; /* Orange color for H3 */
+}
+
+/* Paragraph tags */
+p {
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+    color: #555; /* Dark gray color for paragraphs */
+}
+
+/* Lists */
+ul, ol {
+    font-size: 14pt;
+}
+
+/* Links */
+a {
+    color: #0066cc; /* Default link color */
+    text-decoration: none; /* Remove default underline */
+}
+
+a:visited {
+    color: #663366; /* Visited link color */
+}
+
+a:hover {
+    color: #ff3300; /* Hover link color */
+}
+
+a:active {
+    color: #990000;
+} 
