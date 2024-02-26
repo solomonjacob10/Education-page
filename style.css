@@ -69,3 +69,6 @@ th, td {
 th {
     background-color: transparent;
 }
+img {
+    transition:transform 0.25s ease;
+}
