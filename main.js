@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // enlarging image
 function enlargeImage() {
-    // Add functionality to enlarge the image when clicked
-    // You need to add an onclick attribute to the image in your HTML
+    var image = document.getElementById("myImage");
+    image.style.width = "200px"; // Adjust the width for enlargement
+    image.style.height = "auto"; // Maintain aspect ratio
 }
 
 // navigation menu
