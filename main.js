@@ -1,6 +1,27 @@
 // main.js
 
-// prompting user's name
+// Global variable to track image size state
+var enlarged = false;
+
+// Function to enlarge or shrink the image
+function toggleImageSize() {
+    var image = document.getElementById("myImage");
+    if (!enlarged) {
+        image.style.width = "200px"; // Enlarge the image
+        image.style.height = "auto"; // Maintain aspect ratio
+    } else {
+        image.style.width = "50px"; // Shrink the image back to original size
+        image.style.height = "100px";
+    }
+    enlarged = !enlarged; // Toggle the state
+}
+
+// Function to handle click event on the image
+function handleImageClick() {
+    toggleImageSize();
+}
+
+// Prompting user's name
 document.addEventListener("DOMContentLoaded", function() {
     var nameButton = document.getElementById("nameButton");
     var nameOutput = document.getElementById("nameOutput");
@@ -13,14 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// enlarging image
-function enlargeImage() {
-    var image = document.getElementById("myImage");
-    image.style.width = "200px"; // Adjust the width for enlargement
-    image.style.height = "auto"; // Maintain aspect ratio
-}
-
-// navigation menu
+// Navigation menu
 document.addEventListener("DOMContentLoaded", function() {
     var navItems = document.querySelectorAll("nav ul li");
 
