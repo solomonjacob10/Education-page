@@ -6,14 +6,11 @@ var enlarged = false;
 // Function to enlarge or shrink the image
 function toggleImageSize() {
     var image = document.getElementById("myImage");
-    if (!enlarged) {
-        image.style.width = "200px"; // Enlarge the image
-        image.style.height = "auto"; // Maintain aspect ratio
+    if (image.style.width === "200px") {
+        image.style.width = "100px"; // Change back to original size
     } else {
-        image.style.width = "50px"; // Shrink the image back to original size
-        image.style.height = "100px";
+        image.style.width = "200px"; // Enlarge the image
     }
-    enlarged = !enlarged; // Toggle the state
 }
 
 // Function to handle click event on the image
