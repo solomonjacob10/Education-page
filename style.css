@@ -95,12 +95,3 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #111; /* Darker background color on hover */
 }
-
-/* Image Enlargement Effect */
-img {
-    transition: transform 0.25s ease;
-}
-
-img.enlarge {
-    transform: scale(1.5); /* Adjust the scale factor for enlargement */
-}
