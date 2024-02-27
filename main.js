@@ -7,11 +7,6 @@ function enlargeImage(){
     image.style.height = (image.clientHeight + 200) + "px";
 }
 
-// Function to handle click event on the image
-function handleImageClick() {
-    toggleImageSize();
-}
-
 // Prompting user's name
 document.addEventListener("DOMContentLoaded", function() {
     var nameButton = document.getElementById("nameButton");
