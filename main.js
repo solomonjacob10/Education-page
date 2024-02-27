@@ -1,16 +1,10 @@
 // main.js
 
-// Global variable to track image size state
-var enlarged = false;
-
 // Function to enlarge or shrink the image
-function toggleImageSize() {
-    var image = document.getElementById("myImage");
-    if (image.style.width === "200px") {
-        image.style.width = "100px"; // Change back to original size
-    } else {
-        image.style.width = "200px"; // Enlarge the image
-    }
+function enlargeImage(){
+    var image = document.getElementById("enlargeImage");
+    image.style.width = (image.clientWidth + 250) + "px";
+    image.style.height = (image.clientHeight + 200) + "px";
 }
 
 // Function to handle click event on the image
