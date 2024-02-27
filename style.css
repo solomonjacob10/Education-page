@@ -82,6 +82,7 @@ nav ul {
 
 nav ul li {
     float: left;
+    position: relative; /* Position dropdown menu relative to parent */
 }
 
 nav ul li a {
@@ -95,3 +96,8 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #111; /* Darker background color on hover */
 }
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
