@@ -2,18 +2,18 @@
 
 // Function to enlarge or shrink the image
 function enlargeImage(){
-    var image = document.getElementById("enlargeImage");
+    let image = document.getElementById("enlargeImage");
     image.style.width = (image.clientWidth + 250) + "px";
     image.style.height = (image.clientHeight + 200) + "px";
 }
 
 // Prompting user's name
 document.addEventListener("DOMContentLoaded", function() {
-    var nameButton = document.getElementById("nameButton");
-    var nameOutput = document.getElementById("nameOutput");
+    let nameButton = document.getElementById("nameButton");
+    let nameOutput = document.getElementById("nameOutput");
 
     nameButton.addEventListener("click", function() {
-        var name = prompt("Please enter your name:");
+        let name = prompt("Please enter your name:");
         if (name !== null && name !== "") {
             nameOutput.innerText = "Hello, " + name + "!";
         }
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Navigation menu
 document.addEventListener("DOMContentLoaded", function() {
-    var navItems = document.querySelectorAll("nav ul li");
+    let navItems = document.querySelectorAll("nav ul li");
 
     navItems.forEach(function(navItem) {
         navItem.addEventListener("mouseover", function() {
