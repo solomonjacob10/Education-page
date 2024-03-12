@@ -1,151 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Meta tags for responsiveness and character encoding -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Education Page</title>
-    <link rel="stylesheet" type="text/css" href="main.css" href="style.css">
-    <style>
-        
-
-    </style>
-</head>
-<body>
-
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style></style>
+  </head>
+  <body>
     <header class="header">
-        <div class="title">            
-            <h1>
-                My Education
-            </h1>
+      <!-- Main title -->
+      <div class="title">
+        <h1>My Education</h1>
+      </div>
+      <!-- Navigation options -->
+      <div class="header-options">
+        <!-- Navigation button with dropdown -->
+        <div class="header-button">
+          <a href="about.html">About me</a>
+          <div class="dropdown-container">
+            <div class="dropdown-text">Education</div>
+            <div class="dropdown-text">Life Style</div>
+          </div>
         </div>
-        <div class="header-options">
-            <div class="header-button">
-                <a href="about.html">
-                    About me
-                </a>
-                <div class="dropdown-container">
-                    <div class="dropdown-text">
-                        
-                        Education
-                    </div>
-                    <div class="dropdown-text">
-                        
-                        Life Style
-                    </div>
-                </div>
-            </div>
 
-            <div class="header-button">
-                <a href="experience.html" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Experience</a>
-                <div class="dropdown-container">
-                    <div class="dropdown-text">
-                        
-                        Education
-                    </div>
-                    <div class="dropdown-text">
-                        
-                        Life Style
-                    </div>
-                </div>
-            </div>
+        <!-- Another navigation button with dropdown -->
+        <div class="header-button">
+          <a
+            href="experience.html"
+            onmouseover="mouseOver(this)"
+            onmouseout="mouseOut(this)"
+            >Experience</a
+          >
+          <div class="dropdown-container">
+            <div class="dropdown-text">Education</div>
+            <div class="dropdown-text">Life Style</div>
+          </div>
+        </div>
 
-            <div class="header-button">
-                <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Contact Me</a>
-                <div class="dropdown-container">
-                    <div class="dropdown-text">
-                        
-                        Education
-                    </div>
-                    <div class="dropdown-text">
-                        
-                        Life Style
-                    </div>
-                </div>
-            </div>    
+        <!-- Contact button with dropdown -->
+        <div class="header-button">
+          <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"
+            >Contact Me</a
+          >
+          <div class="dropdown-container">
+            <div class="dropdown-text">Education</div>
+            <div class="dropdown-text">Life Style</div>
+          </div>
         </div>
-        <div id="anna-face" onclick="setEnlarged();" class="anna-face-small">
-            <img src="Lab5picture.jpeg" alt="solomon's ugly face">
-        </div>
-        <div style="margin-top: 20px;">
-            <button id="nameButton">Log In Here! Then try reloading the page. </button>
-            <button id="nameButtonLogOff">Log Out Here!</button>
-        </div>
-        <div id="nameOutput"></div>
-        
+      </div>
+      <!-- Profile image with onclick event -->
+      <div id="solomon-face" onclick="setEnlarged();" class="solomon-face-small">
+        <img src="Lab5picture.jpeg" alt="solomon's face" />
+      </div>
+      <!-- Login and logout buttons -->
+      <div style="margin-top: 20px">
+        <button id="nameButton">Log In Here! Then try reloading the page.</button>
+        <button id="nameButtonLogOff">Log Out Here!</button>
+      </div>
+      <!-- Output for login/logout actions -->
+      <div id="nameOutput"></div>
     </header>
-    
-   
+
     <div class="main-body">
-        <section>
-            <h2>Education</h2>
-            <ol>
-                <li>High School: St Joan of Arc, 2016-2020</li>
-                <li>University: Toronto Metropolitan University, 2020-2024</li>
-            </ol>
-        </section>
-    
-        <section>
-            <h2>Courses/Program</h2>
-            <p>I am in the Business Technology Management program at Toronto Metropolitan University.</p>
-            <p>I am in my last semester of my undergraduate degree. This semester I am taking the following courses: ITM 780, GEO 605, ITM 900, and MKT 504.</p>
-            <h3>Most Useful Course</h3>
-            <p>The course that I found most useful is ITM 750 because it taught me how to effectively run a project and collaborate with my peers when doing so. </p>
-        </section>
-    
-        <section>
-            <h2>Educational Awards</h2>
-            <ol>
-                <li>Entrance Scholarship</li>
-                <li>Dean's List 1st Year</li>
-                <li>Dean's List 2nd Year</li>
-            </ol>
-        </section>
-    
-        <section>
-            <h2>Extra-Curricular Activities</h2>
-            <p>I did several bootcamps such as Python, Excel, and Tableau. </p>
-        </section>
-    
-        <section>
-            <h2>Table</h2>
-            <table>
-                <tr>
-                    <td>
-                        <div>
-                            <p><a href="https://www.linkedin.com/in/solomon-jacob-307892212/">My LinkedIn Profile</a></p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <p>This is my LinkedIn Page</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div>
-                            <p><a href="https://solomonjacob4.wixsite.com/futbol">Futbol Central</a></p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <p>This is a website I made in ITM 445, Multimedia. </p>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </section>
+      <!-- Education section -->
+      <section>
+        <h2>Education</h2>
+        <ol>
+          <li>High School: St Joan of Arc, 2016-2020</li>
+          <li>University: Toronto Metropolitan University, 2020-2024</li>
+        </ol>
+      </section>
+
+      <!-- Courses/Program section -->
+      <section>
+        <h2>Courses/Program</h2>
+        <p>
+          I am in the Business Technology Management program at Toronto
+          Metropolitan University.
+        </p>
+        <p>
+          I am in my last semester of my undergraduate degree. This semester I
+          am taking the following courses: ITM 780, GEO 605, ITM 900, and MKT
+          504.
+        </p>
+        <h3>Most Useful Course</h3>
+        <p>
+          The course that I found most useful is ITM 750 because it taught me
+          how to effectively run a project and collaborate with my peers when
+          doing so.
+        </p>
+      </section>
+
+      <!-- Educational Awards section -->
+      <section>
+        <h2>Educational Awards</h2>
+        <ol>
+          <li>Entrance Scholarship</li>
+          <li>Dean's List 1st Year</li>
+          <li>Dean's List 2nd Year</li>
+        </ol>
+      </section>
+
+      <!-- Extra-Curricular Activities section -->
+      <section>
+        <h2>Extra-Curricular Activities</h2>
+        <p>I did several bootcamps such as Python, Excel, and Tableau.</p>
+      </section>
+
+      <!-- Table with links -->
+      <section>
+        <h2>Table</h2>
+        <table>
+         
+
+          <tr>
+            <td>
+              <div>
+                <p>
+                  <a href="https://www.linkedin.com/in/solomon-jacob-307892212/"
+                    >My LinkedIn Profile</a
+                  >
+                </p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>This is my LinkedIn Page</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>
+                  <a href="https://solomonjacob4.wixsite.com/futbol"
+                    >Futbol Central</a
+                  >
+                </p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>This is a website I made in ITM 445, Multimedia.</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <button id="survey">
+        Click Here for a quick survey
+      </button>
+      <div id="survey-stuff">
+        <form action="experience.html">
+          <br>
+          <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+          <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+          
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> I have a car</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> I have a boat</label><br><br>
+          
+          <label for="car" style="background-color: grey; padding: 3px; border-radius:3px;">What is your favourite Web Dev tool? </label><br>
+          <input type="radio" id="html" name="fav_language" value="HTML" style="margin-top: 10px;">
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">JavaScript</label>
+              
+          <p>
+            <textarea id="autbio" name="message" rows="" cols="30" placeholder="Tell me about yourself!">Tell me about yourself!...
+            </textarea>  
+          </p>
+          <label for="car" style="background-color: grey; padding: 3px; border-radius:3px;">What car do you drive? </label><br>
+          <select id="carbrand" name="cars" style="margin-top: 10px;">
+            <option value="volvo" >Choose Your Car Make</option>
+            <option value="volvo" >Volvo</option>
+            <option value="benz"> Mercedes-Benz </option>
+            <option value="honda" >Honda</option>
+            <option value="volkswagen" >Volkswagen</option>
+            <option value="other" >Other</option>
+          </select><br><br>
+          <input type="submit" value="Submit" onclick="submitResults">
+
+        </form>
+      </div>
     </div>
 
-    
-
     <footer>
-        <p>Visit my <a href="https://github.com/solomonjacob10">GitHub personal website</a>.</p>
+      <p>
+        Visit my
+        <a href="https://github.com/solomonjacob10">GitHub personal website</a>.
+      </p>
     </footer>
 
     <!-- JavaScript -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
