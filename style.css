@@ -1,32 +1,46 @@
-/* Body */
 body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background-color: #f4f4f4; /* Light Gray */
+    background-color: #454545; /* Light Gray */
     color: #333; /* Dark gray */
     margin: 15pt;
+    padding: 10px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
 }
 
-/* Headings */
+.main-body {
+    background-color: #333;
+    margin-top: 20px;
+    padding: 20px;
+}
+
 h1 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 24pt;
-    color: #0066cc; /* Blue color for H1 */
+    color: white;
+}
+
+.auto-bio {
+    color:#990000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
     font-family: "Georgia", serif;
     font-size: 20pt;
-    color: #009900; /* Green color for H2 */
+    color: #2d5072; 
 }
 
 h3 {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Georgia", serif;
     font-size: 16pt;
-    color: #ff6600; /* Orange color for H3 */
+    color: #454545; 
 }
 
-/* Paragraph tags */
 p {
     font-family: Arial, sans-serif;
     font-size: 14pt;
@@ -38,14 +52,16 @@ ul, ol {
     font-size: 14pt;
 }
 
+li {
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+    color: #555;
+}
+
 /* Links */
 a {
     color: #0066cc; /* Default link color */
     text-decoration: none; /* Remove default underline */
-}
-
-a:visited {
-    color: #663366; /* Visited link color */
 }
 
 a:hover {
@@ -101,3 +117,126 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
+}
+.header {
+    padding: 15px;
+    border-bottom: 1px solid var(--color-malibu);
+}
+
+.header-options {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-items: center;
+    transition: height 0.3s;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: l;
+}
+
+a {
+    top: 5px;
+    font-size: x-large;
+}
+
+.header-button {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    position: relative;
+}
+
+.header-button:hover {
+    background-color: black;
+}
+
+.header-button:hover .dropdown-container {
+    display: flex;
+}
+#nameButton {
+    width: auto;
+    height: 30px;
+    background-color: #0066cc;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#nameOutput {
+    color: white;
+    margin-top: 10px;
+}
+
+#nameButtonLogOff {
+    display: none;
+    width: auto;
+    height: 30px;
+    background-color: #7ebdfc;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-container {
+    display: none;
+    flex-direction: column;
+    position: absolute; 
+    top: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dropdown-text {
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: 5px;
+}
+
+.anna-face-small {
+    width: 60px;
+    height: 75px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 20px;
+}
+
+.anna-face-enlarged {
+    width: 480px;
+    height: 600px;
+    margin: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 4px solid white;
+    margin-top: 20px;
+}
+
+.anna-face-enlarged img {
+    width: 100%;
+    height: 100%;
+}
+
+.anna-face-small img {
+    width: 100%;
+    height: 100%;
+}
