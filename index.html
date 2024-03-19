@@ -23,41 +23,47 @@
     <header class="header">
       <!-- Main title -->
       <div class="title">
-        <h1>My Education</h1>
+        <h1>Solomon's Portfolio</h1>
       </div>
       <!-- Navigation options -->
       <div class="header-options">
         <!-- Navigation button with dropdown -->
         <div class="header-button">
           <a href="about.html">About me</a>
-          <div class="dropdown-container">
-            <div class="dropdown-text">Education</div>
-            <div class="dropdown-text">Life Style</div>
-          </div>
         </div>
 
         <!-- Another navigation button with dropdown -->
         <div class="header-button">
           <a
-            href="experience.html"
+            href=""
             onmouseover="mouseOver(this)"
             onmouseout="mouseOut(this)"
-            >Experience</a
+            >Work Experience</a
           >
           <div class="dropdown-container">
-            <div class="dropdown-text">Education</div>
-            <div class="dropdown-text">Life Style</div>
+            <a href="OPS.html">Ontario Public Service</a>
+            <a href="ASE.html">All Stream Electric</a>
           </div>
         </div>
 
         <!-- Contact button with dropdown -->
         <div class="header-button">
           <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"
-            >Contact Me</a
+            >Projects</a
           >
           <div class="dropdown-container">
-            <div class="dropdown-text">Education</div>
-            <div class="dropdown-text">Life Style</div>
+            <address>
+              <a href="IT.html">IT Infrastructure</a>
+              <a href="VACS.html">VACS</a>
+            </address>
+            
+          </div>
+        </div>
+        <div class="header-button">
+          <a href="">Contact Me</a>
+          <div class="dropdown-container">
+            <a href="mailto: solomon.jacob@torontomu.ca">solomon.jacob@<br>.ca</a>
+            <a href="">(647) 838-8476</a>
           </div>
         </div>
       </div>
@@ -67,7 +73,7 @@
       </div>
       <!-- Login and logout buttons -->
       <div style="margin-top: 20px">
-        <button id="nameButton">Log In Here! Then try reloading the page.</button>
+        <button id="nameButton">Log In Here!</button>
         <button id="nameButtonLogOff">Log Out Here!</button>
       </div>
       <!-- Output for login/logout actions -->
@@ -130,9 +136,10 @@
             <td>
               <div>
                 <p>
-                  <a href="https://www.linkedin.com/in/solomon-jacob-307892212/"
+                  <a href="https://www.linkedin.com/in/solomon-jacob-307892212/" target="_blank"
                     >My LinkedIn Profile</a
                   >
+                  
                 </p>
               </div>
             </td>
@@ -146,7 +153,7 @@
             <td>
               <div>
                 <p>
-                  <a href="https://solomonjacob4.wixsite.com/futbol"
+                  <a href="https://solomonjacob4.wixsite.com/futbol" target="_blank"
                     >Futbol Central</a
                   >
                 </p>
@@ -164,7 +171,7 @@
         Click Here for a quick survey
       </button>
       <div id="survey-stuff">
-        <form action="experience.html">
+        <form action="results.html">
           <br>
           <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
           <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
@@ -198,7 +205,7 @@
             <option value="other" >Other</option>
           </select><br><br>
           <input type="submit" value="Submit" onclick="submitResults">
-
+          <input type="reset" value="Clear/Reset" id="clearButton">
         </form>
       </div>
     </div>
@@ -206,7 +213,7 @@
     <footer>
       <p>
         Visit my
-        <a href="https://github.com/solomonjacob10">GitHub personal website</a>.
+        <a href="https://github.com/solomonjacob10" target="_blank">GitHub personal website</a>.
       </p>
     </footer>
 
