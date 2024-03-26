@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background: linear-gradient(to right,rgb(0, 255, 110), rgb(19, 37, 47),rgb(0, 102, 255)) 33%; /* Light Gray */
+    background: linear-gradient(to right,#2486B1, rgb(19, 37, 47),#B14991) 33%; 
     color: #333; /* Dark gray */
     margin: 15pt;
     padding: 0px;
@@ -32,7 +32,7 @@ h1 {
 }
 
 .auto-bio {
-    color:#990000;
+    color:#B14991;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -40,13 +40,13 @@ h2 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20pt;
     letter-spacing: 1px;
-    color: #477eff; 
+    color: #B14991; 
 }
 
 h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16pt;
-    color: rgb(0, 184, 80); 
+    color: #4A44B8; 
 }
 
 p {
@@ -68,12 +68,12 @@ li {
 
 /* Links */
 a {
-    color: #0066cc; /* Default link color */
+    color: #7B42A9; /* Default link color */
     text-decoration: none; /* Remove default underline */
 }
 
 a:hover {
-    color: rgb(0, 255, 110) /* Hover link color */
+    color: #436ebb /* Hover link color */
 }
 
 a:active {
@@ -156,7 +156,7 @@ a {
 #survey {
     width: auto;
     height: 30px;
-    background-color: #7ebdfc;
+    background-color: #B14991;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -192,7 +192,7 @@ a {
 #nameButton {
     width: auto;
     height: 30px;
-    background-color: #0066cc;
+    background-color: #B14991;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -208,7 +208,7 @@ a {
     display: none;
     width: auto;
     height: 30px;
-    background-color: #7ebdfc;
+    background-color: #B14991;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -246,11 +246,11 @@ a {
     font-size: small;
 }
 .dropdown-container a:hover {
-    color: rgb(0, 255, 110); /* Hover link color */
+    color: #4A44B8; /* Hover link color */
 }
 
 a:active {
-    color: rgb(0, 255, 110);
+    color: #4A44B8;
 }
 
 .solomon-face-small {
@@ -283,4 +283,43 @@ a:active {
 .solomon-face-small img {
     width: 100%;
     height: 100%;
+}
+
+.text-sizing-containter {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    align-self: right;
+    justify-self: unset;
+    padding: 3px;
+    background-color: black;
+}
+
+.text-sizing-containter .small {
+    display: flex; 
+    background-color: transparent;
+    color: white;
+    font-size: x-small;
+    align-items: center;
+    justify-items: flex-end;
+    text-decoration: underline;
+}
+.text-sizing-containter .medium {
+    display: flex; 
+    background-color: transparent;
+    color: white;
+    font-size: small;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+}
+.text-sizing-containter .large {
+    display: flex; 
+    background-color: transparent;
+    color: white;
+    font-size: medium;
+    align-items: center;
+    justify-items: baseline;
+    text-decoration: none;
 }
