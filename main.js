@@ -96,3 +96,50 @@ survey.addEventListener("click", function() {
     document.getElementById("survey-stuff").style.display = 'flex';
     document.getElementById("survey").style.display = 'none';
 });
+
+function smallButton() {
+    document.getElementById("small").style.textDecoration = 'underline';
+    document.getElementById("medium").style.textDecoration = 'none';
+    document.getElementById("large").style.textDecoration = 'none';
+    document.getElementById("text1").style.fontSize = '14pt';
+    document.getElementById("text2").style.fontSize = '14pt';
+    document.getElementById("text3").style.fontSize = '14pt';
+    document.getElementById("text4").style.fontSize = '14pt';
+    document.getElementById("text5").style.fontSize = '14pt';
+    document.getElementById("text6").style.fontSize = '14pt';
+    document.getElementById("text7").style.fontSize = '14pt';
+    document.getElementById("text8").style.fontSize = '14pt';
+    document.getElementById("text9").style.fontSize = '14pt';
+    document.getElementById("text10").style.fontSize = '14pt';
+
+}
+function mediumButton() {
+    document.getElementById("small").style.textDecoration = 'none';
+    document.getElementById("medium").style.textDecoration = 'underline';
+    document.getElementById("large").style.textDecoration = 'none';
+    document.getElementById("text1").style.fontSize = '2em';
+    document.getElementById("text2").style.fontSize = '2em';
+    document.getElementById("text3").style.fontSize = '2em';
+    document.getElementById("text4").style.fontSize = '2em';
+    document.getElementById("text5").style.fontSize = '2em';
+    document.getElementById("text6").style.fontSize = '2em';
+    document.getElementById("text7").style.fontSize = '2em';
+    document.getElementById("text8").style.fontSize = '2em';
+    document.getElementById("text9").style.fontSize = '2em';
+    document.getElementById("text10").style.fontSize = '2em';
+}
+function largeButton() {
+    document.getElementById("small").style.textDecoration = 'none';
+    document.getElementById("medium").style.textDecoration = 'none';
+    document.getElementById("large").style.textDecoration = 'underline';
+    document.getElementById("text1").style.fontSize = '4em';
+    document.getElementById("text2").style.fontSize = '4em';
+    document.getElementById("text3").style.fontSize = '4em';
+    document.getElementById("text4").style.fontSize = '4em';
+    document.getElementById("text5").style.fontSize = '4em';
+    document.getElementById("text6").style.fontSize = '4em';
+    document.getElementById("text7").style.fontSize = '4em';
+    document.getElementById("text8").style.fontSize = '4em';
+    document.getElementById("text9").style.fontSize = '4em';
+    document.getElementById("text10").style.fontSize = '4em';
+}
