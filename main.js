@@ -111,8 +111,8 @@ function smallButton() {
     document.getElementById("text8").style.fontSize = '14pt';
     document.getElementById("text9").style.fontSize = '14pt';
     document.getElementById("text10").style.fontSize = '14pt';
-
 }
+
 function mediumButton() {
     document.getElementById("small").style.textDecoration = 'none';
     document.getElementById("medium").style.textDecoration = 'underline';
@@ -128,6 +128,7 @@ function mediumButton() {
     document.getElementById("text9").style.fontSize = '2em';
     document.getElementById("text10").style.fontSize = '2em';
 }
+
 function largeButton() {
     document.getElementById("small").style.textDecoration = 'none';
     document.getElementById("medium").style.textDecoration = 'none';
