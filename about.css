@@ -2,7 +2,7 @@ body {
     padding: 20px;
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background: linear-gradient(to right,rgb(0, 145, 63),rgb(0, 50, 124));  /* Light Gray */
+    background: linear-gradient(to right,#2486B1, rgb(19, 37, 47),#B14991) 33%;
     color: #333; /* Dark gray */
 }
 
