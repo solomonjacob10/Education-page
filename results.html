@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -9,6 +10,47 @@
   <body>
     <div id="Info">
       <button id="results" >View Results</button>
+      <div class="header-options">
+        <!-- Navigation button with dropdown -->
+        <div class="header-button">
+          <a href="about.html">About me</a>
+        </div>
+
+        <!-- Another navigation button with dropdown -->
+        <div class="header-button">
+          <a
+            href=""
+            onmouseover="mouseOver(this)"
+            onmouseout="mouseOut(this)"
+            >Work Experience</a
+          >
+          <div class="dropdown-container">
+            <a href="OPS.html">Ontario Public Service</a>
+            <a href="ASE.html">All Stream Electric</a>
+          </div>
+        </div>
+
+        <!-- Contact button with dropdown -->
+        <div class="header-button">
+          <a href="#" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"
+            >Projects</a
+          >
+          <div class="dropdown-container">
+            <address>
+              <a href="IT.html">IT Infrastructure</a>
+              <a href="VACS.html">VACS</a>
+            </address>
+            
+          </div>
+        </div>
+        <div class="header-button">
+          <a href="">Contact Me</a>
+          <div class="dropdown-container">
+            <a href="mailto: solomon.jacob@torontomu.ca">solomon.jacob@<br>.ca</a>
+            <a href="">(647) 838-8476</a>
+          </div>
+        </div>
+      </div>
       <div id="~fname"></div>
       <span id="~lname"></span>
 
